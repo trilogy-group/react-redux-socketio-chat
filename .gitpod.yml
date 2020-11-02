@@ -6,4 +6,4 @@ tasks:
     command: mongod --dbpath=./db --smallfiles
   - init: npm install && npm run build
     command: npm run start
-  - command: ./chisel server 
+  - command: /home/gitpod/chisel server 
