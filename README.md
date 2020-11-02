@@ -57,3 +57,11 @@ And then point your browser to `localhost:3000`
 ## Todos
 * Implement virtual scrolling for the chat and channel modal, so that the dom elements load faster!
 * Figure out a way to make the initial load quicker, loading only above the fold content? pagination? or some other idea
+
+# Testing
+## On the server side:
+gp url 8080
+
+## On the client Side:
+./chisel.exe client https://8080-b4f2b439-c07b-4ccd-98db-f31f06d55b7a.ws.trilogy.devspaces.com 27017
+and open the DB explorer
