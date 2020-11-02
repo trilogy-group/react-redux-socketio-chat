@@ -2,5 +2,8 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
+  - init: mkdir db
+    command: mongod --dbpath=./db --smallfiles
   - init: npm install && npm run build
     command: npm run start
+  - command: ./chisel server 
